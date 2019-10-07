@@ -234,6 +234,11 @@ Then in your controller's login method you can use the redirect query parameter:
             return $this->redirect($target);
         }
     }
+    
+.. deprecated:: 4.0.0
+    The `unauthenticatedRedirect` and `queryParam` configuration key on AuthenticationMiddleware is deprecated. 
+    Instead set the  `unauthenticatedRedirect` and `queryParam` on your AuthenticationService instance.
+
 
 Migrating Hashing Upgrade Logic
 ===============================
